@@ -18,6 +18,6 @@ public class Touch : MonoBehaviour {
 		
 	}
 	void OnCollisionEnter(Collision col){
-		print ("you can't swim!");
+
 	}
 }
