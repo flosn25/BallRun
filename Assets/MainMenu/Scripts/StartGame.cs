@@ -17,4 +17,8 @@ public class StartGame : MonoBehaviour {
 		Application.LoadLevel ("Level1");
 
 	}
+
+	public void QuitGame() {
+				Application.Quit ();
+		}
 }
