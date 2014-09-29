@@ -13,7 +13,7 @@ public class CameraControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {/*übernimmt KameraPosition , bleibt leicht dahinter*/
-		transform.position = new Vector3(Player.transform.position.x, y, Player.transform.position.z-z);
+	void Update () {/*übernimmt KameraPosition , bleibt leicht dahinter, springt mit*/
+		transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y+y, Player.transform.position.z-z);
 	}
 }
