@@ -10,8 +10,12 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	public bool touch = true;
 	public Vector3 jumpVelocity;
+	public int points;
+	public GameObject disppoints;
+
 	void Start () {
-	
+		points = 0;//Punktestand
+		disppoints = GameObject.Find ("Text");
 	}
 	
 	// Update is called once per frame
@@ -25,6 +29,8 @@ public class Player : MonoBehaviour {
 		Vector3 f =  new Vector3 (h, 0, v);//zur Bewegung links, rechts, vorwärts, rückwärts
 		rigidbody.AddForce (50.0f * f);//20 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
 
+
+		Debug.Log (disppoints.guiText);
 	}
 	void OnCollisionEnter(Collision c){//Boddenkollision zum erneuten Sprung
 		touch = true;
