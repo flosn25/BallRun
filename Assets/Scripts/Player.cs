@@ -10,8 +10,11 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	public bool touch = true;
 	public Vector3 jumpVelocity;
+	public int points;
 	void Start () {
-	
+		Time.timeScale = 0;
+		points = 5;
+		StartCoroutine(WaitForKeyPress());
 	}
 	
 	// Update is called once per frame
@@ -28,5 +31,18 @@ public class Player : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision c){//Boddenkollision zum erneuten Sprung
 		touch = true;
+	}
+
+	public IEnumerator WaitForKeyPress()
+	{
+		while(true)
+		{
+			if(Input.anyKeyDown)
+			{
+				Time.timeScale = 1;
+				break;
+			}
+			yield return 0;
+		}
 	}
 }
