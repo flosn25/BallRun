@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	public int points;
 	void Start () {
 		Time.timeScale = 0;
-		points = 5;
+		points = 0;
 		StartCoroutine(WaitForKeyPress());
 	}
 	

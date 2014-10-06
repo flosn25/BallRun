@@ -3,19 +3,19 @@ using System.Collections;
 
 public class PowerUp : MonoBehaviour {
 	/*/////////////////////////////////////
-	PowerUp benötigt:
+	PowerUp benötigt: 
 		SphereCollider als Trigger!
 		Animation, + beide PowerUp Scripte
 	 //////////////////////////////////////*/
 
-	public Player player;
-		
+			public Player player;
+	
 	void Start() {
 		GameObject playerObject = GameObject.Find ("Sphere");
 		player = playerObject.GetComponent<Player> ();
 	}
 	void OnTriggerEnter (Collider col){
-
+		
 		//Debug.Log (this.gameObject); // gibt angestoßenes Objekt aus
 		//this.gameObject.renderer.enabled = false; //nicht möglich als Entfernen, da Objekt weiterhin im Weg 
 		//StartCoroutine ("PlayAnimation");//Startet 

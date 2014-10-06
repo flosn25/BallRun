@@ -2645,7 +2645,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519193813}
   m_LocalRotation: {x: .226330072, y: .00350242294, z: .000815707084, w: -.974044085}
-  m_LocalPosition: {x: .0516997129, y: -2.37893581, z: -12.7556219}
+  m_LocalPosition: {x: .0513512641, y: -2.3551302, z: -12.7071629}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2803,7 +2803,6 @@ MonoBehaviour:
   touch: 1
   jumpVelocity: {x: 0, y: 10, z: 0}
   points: 0
-  disppoints: {fileID: 0}
 --- !u!1001 &1555572492
 Prefab:
   m_ObjectHideFlags: 0
