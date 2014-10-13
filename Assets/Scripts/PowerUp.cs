@@ -10,6 +10,8 @@ public class PowerUp : MonoBehaviour {
 	 //////////////////////////////////////*/
 
 	public Player player;
+	public Vector3 jumpVelocity;
+	public bool touch;
 	
 	void Start() {
 		GameObject playerObject = GameObject.Find ("Sphere");//
@@ -22,9 +24,10 @@ public class PowerUp : MonoBehaviour {
 		Punkte.text = player.points.ToString();//Anzeige von Texten
 		Destroy(this.gameObject);//PowerUp auflösen
 
-		if (this.gameObject.Equals ("Capsule")) 
+		if (collider.gameObject.name.Equals("pfeilmax")) //ob Sprung-PowerUp
 		{
-			Debug.Log ("test");
+			player.rigidbody.AddForce(jumpVelocity, ForceMode.VelocityChange);//"Sprung" durch AddForce, JumpVelocity per Hand nachgestellt (0,10,0)
+			touch = false;// erst wieder Sprung, wenn Collision auf true
 		}
 	}
 }
