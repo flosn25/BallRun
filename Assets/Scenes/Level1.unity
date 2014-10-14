@@ -2189,6 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb896017e63d5b4e90b6c77aff578ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedUpFactor: 3
 --- !u!1 &161412321
 GameObject:
   m_ObjectHideFlags: 0
@@ -27895,7 +27896,7 @@ GameObject:
   - 114: {fileID: 1557090980}
   - 114: {fileID: 1557090982}
   m_Layer: 5
-  m_Name: TimeDisplayText
+  m_Name: Text_Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27915,7 +27916,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -220, y: -200}
+  m_AnchoredPosition: {x: -200, y: -150}
   m_SizeDelta: {x: 130, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1557090980
@@ -27930,11 +27931,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Mat: {fileID: 0}
-  m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
