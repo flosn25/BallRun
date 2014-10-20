@@ -12,6 +12,11 @@ public class PowerUp : MonoBehaviour {
 	public Player player;
 	public Vector3 jumpVelocity;
 	public bool touch;
+	public Text SumScore;
+	public Text LevelScore;
+	public Text BonusScore;
+
+
 	
 	void Start() {
 		GameObject playerObject = GameObject.Find ("Sphere");//
@@ -19,9 +24,13 @@ public class PowerUp : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col){
-		player.points = player.points + 1000;//Puntke bei einsammeln 1000 hochzählen
-		var Punkte = GameObject.Find ("Text_Points").GetComponent<Text> ();//Angezeigten Text finden
-		Punkte.text = player.points.ToString();//Anzeige von Texten
+
+
+		player.points +=  1000; //Puntke bei einsammeln 1000 hochzählen
+		SumScore = GameObject.Find ("Text_Points").GetComponent<Text> ();//Angezeigten Text finden
+		SumScore.text = player.points.ToString();//Anzeige von Texten
+		PlayerPrefs.SetString ("SumScore", player.points.ToString()); // global "festhalten"
+		Debug.Log("SumScore= "+ PlayerPrefs.GetString ("SumScore"));
 		Destroy(this.gameObject);//PowerUp auflösen
 
 		if (collider.gameObject.name.Equals("pfeilmax")) //ob Sprung-PowerUp
