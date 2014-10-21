@@ -25,6 +25,11 @@ public class PowerUp : MonoBehaviour {
 
 	void OnTriggerEnter (Collider col){
 
+		if (audio) {
+			Debug.Log ("audio found");
+			Debug.Log (audio);
+			audio.Play();
+	    }
 
 		player.points +=  1000; //Puntke bei einsammeln 1000 hochzählen
 		SumScore = GameObject.Find ("Text_Points").GetComponent<Text> ();//Angezeigten Text finden
