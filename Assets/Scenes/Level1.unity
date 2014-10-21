@@ -10686,11 +10686,11 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 4db7b82b306cf234b985d4b22b4cdbf9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .170000002
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 128
+  Priority: 38
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -18732,6 +18732,7 @@ GameObject:
   - 114: {fileID: 1147684763}
   - 114: {fileID: 1147684762}
   - 135: {fileID: 1147684761}
+  - 82: {fileID: 1147684768}
   - 114: {fileID: 1147684767}
   m_Layer: 0
   m_Name: Cylinder
@@ -18837,6 +18838,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rotation: 35
+--- !u!82 &1147684768
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147684760}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: f351e72f599389c4baa9eb572de2ea69, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 255
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 5000
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .783333361
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1148035212
 GameObject:
   m_ObjectHideFlags: 0

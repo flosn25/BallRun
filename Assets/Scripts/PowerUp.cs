@@ -26,7 +26,7 @@ public class PowerUp : MonoBehaviour {
 	void OnTriggerEnter (Collider col){
 
 		if (audio) {
-			Debug.Log ("audio found");
+			Debug.Log ("OnTriggerEnter: audio found");
 			Debug.Log (audio);
 			audio.Play();
 	    }
