@@ -6315,7 +6315,7 @@ GameObject:
   - 23: {fileID: 399019650}
   - 114: {fileID: 399019653}
   m_Layer: 0
-  m_Name: startplattform
+  m_Name: endplattform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
