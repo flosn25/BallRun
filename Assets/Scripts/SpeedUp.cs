@@ -6,6 +6,7 @@ public class SpeedUp : MonoBehaviour {
 
 	public float speedUpFactor = 5; // Faktor, um den timeScale erhöht wird
 	private float prevSpeed; // Geschwindigkeit bevor Ball über Feld
+	public AudioClip Sound;
 
 	// Use this for initialization
 	void Start() {
@@ -16,6 +17,7 @@ public class SpeedUp : MonoBehaviour {
 		prevSpeed = Time.timeScale; // vorherige Geschwindigkeit zwischenspeichern
 		Time.timeScale *= speedUpFactor; // Geschwindigkeit mit Faktor multiplizieren
 		//Debug.Log ("OnCollisionEnter: Player is above me");
+		AudioSource.PlayClipAtPoint(Sound, transform.position);
 	}
 
 	// Wenn Ball das Feld wieder verlässt
