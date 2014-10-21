@@ -10,11 +10,17 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	public bool touch = true;
 	public Vector3 jumpVelocity;
-	public int points;
+	public int points, cointpoints, levelendpoints, timebonus, jumpbonus;
+
 	void Start () {
 		PlayerPrefs.DeleteKey ("SumScore");
 		Time.timeScale = 0;
 		points = 0;
+		cointpoints = 0;
+		levelendpoints = 0;
+		timebonus = 0;
+		jumpbonus = 0;
+
 		StartCoroutine(WaitForKeyPress());
 	}
 	

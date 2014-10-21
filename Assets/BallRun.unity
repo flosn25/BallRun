@@ -258,6 +258,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23164e5088401a24f999875e60ad62e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  jumpVelocity: {x: 0, y: 0, z: 0}
+  touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
+  Sound: {fileID: 0}
 --- !u!135 &79995334
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2305,8 +2312,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519193813}
-  m_LocalRotation: {x: .252218246, y: .013939796, z: .00365025271, w: -.967563093}
-  m_LocalPosition: {x: -.466979355, y: -2.87571073, z: -10.238306}
+  m_LocalRotation: {x: .0958466008, y: .0119442055, z: .00115005858, w: -.995323837}
+  m_LocalPosition: {x: 706.003967, y: -577.851562, z: -2612.14819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2410,6 +2417,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touch: 1
   jumpVelocity: {x: 0, y: 10, z: 0}
+  points: 0
+  cointpoints: 0
+  levelendpoints: 0
+  timebonus: 0
+  jumpbonus: 0
 --- !u!1 &1594017575
 GameObject:
   m_ObjectHideFlags: 0
