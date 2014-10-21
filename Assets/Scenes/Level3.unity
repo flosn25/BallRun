@@ -920,6 +920,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &27859141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,6 +1691,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &58021659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3518,7 +3524,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ee6950534a0f69458413f48213336c2, type: 2}
+  - {fileID: 2100000, guid: 95feeb237d77fc245b4d58e58f3f74c8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4954,7 +4960,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ee6950534a0f69458413f48213336c2, type: 2}
+  - {fileID: 2100000, guid: 95feeb237d77fc245b4d58e58f3f74c8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -6122,8 +6128,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 207202598}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -6138,7 +6144,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &207202598
@@ -6152,7 +6158,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: .588235319}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -6168,7 +6174,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 207202596}
-  m_HideIfInvisible: 0
 --- !u!224 &207202600
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6724,7 +6729,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -6745,7 +6750,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218637386}
-  m_HideIfInvisible: 0
 --- !u!224 &218637389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13546,6 +13550,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 100, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!135 &399510248
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13793,6 +13800,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &414846563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14770,6 +14780,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &438980724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17554,6 +17567,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &497445439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18413,6 +18429,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 100, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!135 &515507084
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19303,6 +19322,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &552171734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20775,6 +20797,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &604109490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20874,7 +20899,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588235319}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -20897,7 +20922,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605400133}
-  m_HideIfInvisible: 0
 --- !u!1 &609825874
 GameObject:
   m_ObjectHideFlags: 0
@@ -21557,8 +21581,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 632349183}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -21573,7 +21597,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &632349183
@@ -21587,7 +21611,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: .588235319}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -21603,7 +21627,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 632349180}
-  m_HideIfInvisible: 0
 --- !u!1 &632825810
 GameObject:
   m_ObjectHideFlags: 0
@@ -23937,6 +23960,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &744076044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25009,6 +25035,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &767157074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25644,6 +25673,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &798052476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26368,6 +26400,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &811377581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27104,6 +27139,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &825406683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27596,6 +27634,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &848048541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29527,6 +29568,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &901040119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31804,6 +31848,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &986064522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33286,6 +33333,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1021105449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36196,7 +36246,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ee6950534a0f69458413f48213336c2, type: 2}
+  - {fileID: 2100000, guid: 95feeb237d77fc245b4d58e58f3f74c8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -37126,6 +37176,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1159704216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37893,6 +37946,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1182609863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40209,6 +40265,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1260032795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40927,7 +40986,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ee6950534a0f69458413f48213336c2, type: 2}
+  - {fileID: 2100000, guid: 95feeb237d77fc245b4d58e58f3f74c8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -41810,6 +41869,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1301759474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42844,6 +42906,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1332715202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45043,6 +45108,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1407307250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45774,6 +45842,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1423053615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46850,6 +46921,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1451713183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47043,8 +47117,8 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
   m_TargetGraphic: {fileID: 1453242483}
+  m_Interactable: 1
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -47059,7 +47133,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_Enabled: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1453242483
@@ -47073,7 +47147,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: .588235319}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
@@ -47089,7 +47163,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453242480}
-  m_HideIfInvisible: 0
 --- !u!1 &1459085134
 GameObject:
   m_ObjectHideFlags: 0
@@ -47318,6 +47391,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1471657507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48708,6 +48784,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1512681378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49969,6 +50048,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1544025230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50222,6 +50304,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1551511585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50529,7 +50614,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -50550,7 +50635,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557090978}
-  m_HideIfInvisible: 0
 --- !u!114 &1557090982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52399,6 +52483,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1612391968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55394,6 +55481,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1698283844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55493,7 +55583,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588235319}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -55514,7 +55604,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698969920}
-  m_HideIfInvisible: 0
 --- !u!1 &1702422601
 GameObject:
   m_ObjectHideFlags: 0
@@ -56385,7 +56474,6 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!1 &1729789376
@@ -57346,6 +57434,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1751288112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57837,6 +57928,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1762552383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58367,7 +58461,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1ee6950534a0f69458413f48213336c2, type: 2}
+  - {fileID: 2100000, guid: 95feeb237d77fc245b4d58e58f3f74c8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -58520,7 +58614,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Mat: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .588235319}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -58543,7 +58637,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781733726}
-  m_HideIfInvisible: 0
 --- !u!1 &1782749184
 GameObject:
   m_ObjectHideFlags: 0
@@ -58711,6 +58804,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1785937278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61601,6 +61697,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1899745577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62144,6 +62243,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1910872925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62328,6 +62430,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &1912282643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63243,7 +63348,6 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
 --- !u!114 &1954745442
@@ -66333,6 +66437,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &2028696556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66793,6 +66900,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &2040148891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67113,7 +67223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
 --- !u!4 &2055086842
 Transform:
   m_ObjectHideFlags: 0
@@ -67187,6 +67296,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &2055595374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68080,6 +68192,9 @@ MonoBehaviour:
   player: {fileID: 0}
   jumpVelocity: {x: 0, y: 0, z: 0}
   touch: 0
+  SumScore: {fileID: 0}
+  LevelScore: {fileID: 0}
+  BonusScore: {fileID: 0}
 --- !u!114 &2081601444
 MonoBehaviour:
   m_ObjectHideFlags: 0
