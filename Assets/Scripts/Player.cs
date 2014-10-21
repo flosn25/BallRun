@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
 			touch = false;// erst wieder Sprung, wenn Collision auf true
 		}
 		Vector3 f =  new Vector3 (h, 0, v);//zur Bewegung links, rechts, vorwärts, rückwärts
-		rigidbody.AddForce (120.0f * f);//120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
+		rigidbody.AddForce (80.0f * f);//120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
 
 	}
 	void OnCollisionEnter(Collision c){//Boddenkollision zum erneuten Sprung
