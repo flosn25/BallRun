@@ -8,7 +8,22 @@ public class PauseMenuManager : MonoBehaviour {
 
 	void Update () {
 
-				if (Input.GetKeyDown (KeyCode.Escape)) {
+		if(transform.position.y <= -5)//check bei Runterfallen
+		{
+
+			Debug.Log("FAAAAAAAAAAAAAAALLLLEN");
+//			LevelEnd levelEnd = new LevelEnd();//ruft LevelEnd c# funktion
+//			levelEnd.LevelFail();//c# klasse wird aufgerufen
+		}
+
+		if (transform.position.y < 0) {
+			Time.timeScale = 0;
+			pauseGame = true;
+			PauseMenuObject.SetActive (true);
+			GameObject.Find ("Main Camera").GetComponent<CameraControl>().enabled = false;
+				}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
 						pauseGame = !pauseGame;
 
 						if (pauseGame == true) {

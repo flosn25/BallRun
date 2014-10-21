@@ -19,7 +19,7 @@ public class TimeDisplay : MonoBehaviour {
 	void Update () {
 		timePassed += Time.deltaTime;
 
-		Text_Time.text = "Zeit: " + timePassed.ToString ("F2").PadLeft(6, '0');
+		Text_Time.text = timePassed.ToString ("F2").PadLeft(6, '0');
 
 	}
 
