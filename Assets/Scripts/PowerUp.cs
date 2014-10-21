@@ -35,7 +35,7 @@ public class PowerUp : MonoBehaviour {
 		SumScore = GameObject.Find ("Text_Points").GetComponent<Text> ();//Angezeigten Text finden
 		SumScore.text = player.points.ToString();//Anzeige von Texten
 		PlayerPrefs.SetString ("SumScore", player.points.ToString()); // global "festhalten"
-		Debug.Log("SumScore= "+ PlayerPrefs.GetString ("SumScore"));
+		//Debug.Log("SumScore= "+ PlayerPrefs.GetString ("SumScore"));
 		Destroy(this.gameObject);//PowerUp auflösen
 
 		if (collider.gameObject.name.Equals("pfeilmax")) //ob Sprung-PowerUp
