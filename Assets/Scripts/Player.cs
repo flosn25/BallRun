@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	public Vector3 jumpVelocity;
 	public int points;
 	void Start () {
+		PlayerPrefs.DeleteKey ("SumScore");
 		Time.timeScale = 0;
 		points = 0;
 		StartCoroutine(WaitForKeyPress());
