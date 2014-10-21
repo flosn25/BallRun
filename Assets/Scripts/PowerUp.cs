@@ -24,13 +24,7 @@ public class PowerUp : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col){
-
-		/*if (audio) {
-			Debug.Log ("OnTriggerEnter: audio found");
-			Debug.Log (audio);
-			Debug.Log (this.gameObject);
-			audio.Play();
-		}*/
+		
 		AudioSource.PlayClipAtPoint(Sound, transform.position);//spielt Sound ab
 		player.points +=  1000; //Puntke bei einsammeln 1000 hochzählen
 
