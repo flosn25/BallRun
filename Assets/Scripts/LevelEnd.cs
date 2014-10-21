@@ -61,7 +61,10 @@ public class LevelEnd : MonoBehaviour {
 
 		Application.LoadLevel ("HighScoreTable");
 	}
+	public void LevelFail()
+	{
 
+	}
 
 
 }
