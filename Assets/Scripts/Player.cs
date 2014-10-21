@@ -14,6 +14,14 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 		PlayerPrefs.DeleteKey ("SumScore");
+		PlayerPrefs.DeleteKey ("CointPoints");
+		PlayerPrefs.DeleteKey ("TimePoints");
+		PlayerPrefs.DeleteKey ("LevelEndPoints");
+		PlayerPrefs.DeleteKey ("JumpPoints");
+
+
+		Debug.Log ("Zeit zurücksetzen!");
+
 		Time.timeScale = 0;
 		points = 0;
 		cointpoints = 0;
