@@ -5,6 +5,22 @@ public class MainMenuBehaviour : MonoBehaviour {
 
 
 	public void PlayGame () {
+
+		PlayerPrefs.DeleteKey ("SumScore");
+		PlayerPrefs.DeleteKey ("CointPoints");
+		PlayerPrefs.DeleteKey ("TimePoints");
+		PlayerPrefs.DeleteKey ("LevelEndPoints");
+		PlayerPrefs.DeleteKey ("JumpPoints");
+
+		// Zum resetten des All-Time-Highscores: Auskommentierung einmalig(!) entfernen
+		/*PlayerPrefs.DeleteKey ("SumScoreAllTime");
+		PlayerPrefs.DeleteKey ("CointPointsAllTime");
+		PlayerPrefs.DeleteKey ("TimePointsAllTime");
+		PlayerPrefs.DeleteKey ("LevelEndPointsAllTime");
+		PlayerPrefs.DeleteKey ("JumpPointsAllTime");*/
+
+		PlayerPrefs.Save();
+
 		Application.LoadLevel ("Level1");
 		
 	}

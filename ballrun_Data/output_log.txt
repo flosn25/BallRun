@@ -1,30 +1,60 @@
 Initialize engine version: 4.6.0b17 (2d43734a3870)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 650M   (ID=0xfd1)
-    Vendor:   NVIDIA
-    VRAM:     1985 MB
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics Family (ID=0x116)
+    Vendor:   Intel
+    VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
-desktop: 1920x1080 60Hz; virtual: 3200x1338 at -1280,-258
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\temp\studium\BallRun\ballrun_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\temp\studium\BallRun\ballrun_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\temp\studium\BallRun\ballrun_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.059 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\System.dll (this message is harmless)
-Platform assembly: D:\Eigene Dateien\Unity\BallRun2\ballrun_Data\Managed\System.Core.dll (this message is harmless)
-UnloadTime: 7.995505 ms
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\temp\studium\BallRun\ballrun_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 7.483911 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 199.
-Total: 7.176231 ms (FindLiveObjects: 0.013386 ms CreateObjectMapping: 0.011601 ms MarkObjects: 0.149932 ms  DeleteObjects: 6.590781 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 190.
+Total: 8.824340 ms (FindLiveObjects: 0.016509 ms CreateObjectMapping: 0.012940 ms MarkObjects: 0.235155 ms  DeleteObjects: 7.686046 ms)
+
+Sum Score: 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Coint Score: 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Time Score: 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Level End Score: 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Next Level: 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.740270 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4086.
+Total: 1.103042 ms (FindLiveObjects: 0.155728 ms CreateObjectMapping: 0.020079 ms MarkObjects: 0.327075 ms  DeleteObjects: 0.050868 ms)
+
+Zeit zurücksetzen!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 

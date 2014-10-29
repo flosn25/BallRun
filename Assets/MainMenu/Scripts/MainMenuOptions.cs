@@ -19,6 +19,13 @@ public class MainMenuOptions : MonoBehaviour {
 	}
 
 	public void QuitGame() {
-				Application.Quit ();
-		}
+		Application.Quit ();
+	}
+
+	public void ShowScore() {
+		GameObject HighScoreTable = GameObject.Find ("HighScoreTable");
+		Debug.Log (HighScoreTable);
+		//player = playerObject.GetComponent<Player> ();//
+		Application.LoadLevel ("HighScoreTable");
+	}
 }

@@ -4,41 +4,56 @@ using UnityEngine.UI;
 
 public class ScoreMenuOptions : MonoBehaviour {
 
-	public Text sumScoreTextObject, cointPointsTextObject, timePointsTextObject, levelEndPointsTextObject, jumpPointsTextObject;
-	public string sumScoreString, cointPointsString, timePointsString, levelEndPointsString, jumpPointsString;
-	
+	public Text textObject; //, cointPointsTextObject, timePointsTextObject, levelEndPointsTextObject, jumpPointsTextObject;
+	public int sumScore, cointPoints, timePoints, levelEndPoints, jumpPoints;
+	public Player player;
+
 	// Use this for initialization
 	void Start () {
 
-		sumScoreString = PlayerPrefs.GetString ("SumScore"); // global "festhalten"	
-		cointPointsString =  PlayerPrefs.GetString ("CointPoints"); // global "festhalten"	
-		timePointsString =  PlayerPrefs.GetString ("TimePoints"); // global "festhalten"	
-		levelEndPointsString =  PlayerPrefs.GetString ("LevelEndPoints"); // global "festhalten"	
-		jumpPointsString =  PlayerPrefs.GetString ("JumpPoints"); // global "festhalten"	
+		sumScore = PlayerPrefs.GetInt ("SumScore"); // global "festhalten"
+		PlayerPrefs.SetInt("SumScoreAllTime", Mathf.Max(PlayerPrefs.GetInt("SumScoreAllTime"), sumScore));
+		cointPoints =  PlayerPrefs.GetInt ("CointPoints"); // global "festhalten"	
+		PlayerPrefs.SetInt("CointPointsAllTime", Mathf.Max(PlayerPrefs.GetInt("CointPointsAllTime"), cointPoints));
+		timePoints =  PlayerPrefs.GetInt ("TimePoints"); // global "festhalten"	
+		PlayerPrefs.SetInt("TimePointsAllTime", Mathf.Max(PlayerPrefs.GetInt("TimePointsAllTime"), timePoints));
+		levelEndPoints =  PlayerPrefs.GetInt ("LevelEndPoints"); // global "festhalten"	
+		PlayerPrefs.SetInt("LevelEndPointsAllTime", Mathf.Max(PlayerPrefs.GetInt("LevelEndPointsAllTime"), levelEndPoints));
+		jumpPoints =  PlayerPrefs.GetInt ("JumpPoints"); // global "festhalten"	*/
+		PlayerPrefs.SetInt("JumpPointsAllTime", Mathf.Max(PlayerPrefs.GetInt("JumpPointsAllTime"), jumpPoints));
+
+		PlayerPrefs.Save ();
+
+		textObject = GameObject.Find ("SumScore").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = sumScore.ToString();//Anzeige von Texten
+		textObject = GameObject.Find ("SumScoreAllTime").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = PlayerPrefs.GetInt ("SumScoreAllTime").ToString();//Anzeige von Texten
+
+		textObject = GameObject.Find ("CointPoints").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = cointPoints.ToString();
+		textObject = GameObject.Find ("CointPointsAllTime").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = PlayerPrefs.GetInt("CointPointsAllTime").ToString();
+
+		textObject = GameObject.Find ("JumpPoints").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = jumpPoints.ToString();
+		textObject = GameObject.Find ("JumpPointsAllTime").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = PlayerPrefs.GetInt("JumpPointsAllTime").ToString();
+
+		textObject = GameObject.Find ("LevelEndPoints").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = levelEndPoints.ToString();
+		textObject = GameObject.Find ("LevelEndPointsAllTime").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = PlayerPrefs.GetInt("LevelEndPointsAllTime").ToString();
+
+		textObject = GameObject.Find ("TimePoints").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = timePoints.ToString();
+		textObject = GameObject.Find ("TimePointsAllTime").GetComponent<Text> (); //Angezeigten Text finden
+		textObject.text = PlayerPrefs.GetInt("TimePointsAllTime").ToString();
 
 
-
-		sumScoreTextObject = GameObject.Find ("SumScore").GetComponent<Text> (); //Angezeigten Text finden
-		sumScoreTextObject.text = sumScoreString;//Anzeige von Texten
-
-		cointPointsTextObject = GameObject.Find ("CointPoints").GetComponent<Text> (); //Angezeigten Text finden
-		cointPointsTextObject.text = cointPointsString;//Anzeige von Texten
-
-		jumpPointsTextObject = GameObject.Find ("JumpPoints").GetComponent<Text> (); //Angezeigten Text finden
-		jumpPointsTextObject.text = jumpPointsString;//Anzeige von Texten
-
-
-		levelEndPointsTextObject = GameObject.Find ("LevelEndPoints").GetComponent<Text> (); //Angezeigten Text finden
-		levelEndPointsTextObject.text = levelEndPointsString;//Anzeige von Texten
-
-		timePointsTextObject = GameObject.Find ("TimePoints").GetComponent<Text> (); //Angezeigten Text finden
-		timePointsTextObject.text = timePointsString ;//Anzeige von Texten
-
-
-		Debug.Log ("Sum Score: " + sumScoreString);
+		/*Debug.Log ("Sum Score: " + sumScoreString);
 		Debug.Log ("Coint Score: " + cointPointsString);
 		Debug.Log ("Time Score: " + timePointsString);
-		Debug.Log ("Level End Score: " + levelEndPointsString);
+		Debug.Log ("Level End Score: " + levelEndPointsString);*/
 
 
 		}

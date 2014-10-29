@@ -45,20 +45,27 @@ public class LevelEnd : MonoBehaviour {
 			player.timebonus = (int) timeBonus;
 		}
 
-		PlayerPrefs.SetString ("CointPoints", player.cointpoints.ToString()); 
+		PlayerPrefs.SetInt ("CointPoints", player.cointpoints);
+		PlayerPrefs.SetInt ("TimePoints", player.timebonus);
+		PlayerPrefs.SetInt ("LevelEndPoints", player.levelendpoints);
+		PlayerPrefs.SetInt ("JumpPoints", player.jumpbonus);
+
+		/*PlayerPrefs.SetString ("CointPoints", player.cointpoints.ToString()); 
 	    PlayerPrefs.SetString ("TimePoints", player.timebonus.ToString()); 
 		PlayerPrefs.SetString ("LevelEndPoints", player.levelendpoints.ToString()); 
-		PlayerPrefs.SetString ("JumpPoints", player.jumpbonus.ToString()); 
+		PlayerPrefs.SetString ("JumpPoints", player.jumpbonus.ToString());*/
 
 		player.points = player.cointpoints + player.timebonus + player.levelendpoints + player.jumpbonus;
 		string levelNumberString = Regex.Replace(Application.loadedLevelName, "[^.0-9]", "");
 		int levelNumberInt = int.Parse (levelNumberString);
-		PlayerPrefs.SetString ("SumScore", player.points.ToString()); // global "festhalten"
+
+		PlayerPrefs.SetInt ("SumScore", player.points);
+		//PlayerPrefs.SetString ("SumScore", player.points.ToString()); // global "festhalten"
 
 		Debug.Log ("Level Number: " + levelNumberInt);
 		PlayerPrefs.SetInt ("CurrentLevel", levelNumberInt);	
 		                     
-
+		PlayerPrefs.Save ();
 		Application.LoadLevel ("HighScoreTable");
 	}
 	public void LevelFail()

@@ -13,12 +13,13 @@ public class Player : MonoBehaviour {
 	public int points, cointpoints, levelendpoints, timebonus, jumpbonus;
 
 	void Start () {
+
 		PlayerPrefs.DeleteKey ("SumScore");
 		PlayerPrefs.DeleteKey ("CointPoints");
 		PlayerPrefs.DeleteKey ("TimePoints");
 		PlayerPrefs.DeleteKey ("LevelEndPoints");
 		PlayerPrefs.DeleteKey ("JumpPoints");
-
+		PlayerPrefs.Save();
 
 		Debug.Log ("Zeit zurücksetzen!");
 
@@ -42,10 +43,13 @@ public class Player : MonoBehaviour {
 		}
 		Vector3 f =  new Vector3 (h, 0, v);//zur Bewegung links, rechts, vorwärts, rückwärts
 		rigidbody.AddForce (120.0f * f);//120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
-		if(transform.position.y <= -5)//check bei Runterfallen
+		/*if(transform.position.y <= -5)//check bei Runterfallen
 		{
 			LevelEnd levelEnd = new LevelEnd();//ruft LevelEnd c# funktion
 			levelEnd.LevelFail();//c# klasse wird aufgerufen
+		}*/
+		if (transform.position.y <= -3) {//check bei Runterfallen
+			Application.LoadLevel ("HighScoreTable");
 		}
 
 	}

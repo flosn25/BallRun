@@ -957,7 +957,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_Enabled: 0
       - m_Target: {fileID: 1603579653}
-        m_MethodName: PlayGame
+        m_MethodName: ShowScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
