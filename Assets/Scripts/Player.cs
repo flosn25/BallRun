@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 
+		// Zwischengespeicherte Datensätze löschen.
 		PlayerPrefs.DeleteKey ("SumScore");
 		PlayerPrefs.DeleteKey ("CointPoints");
 		PlayerPrefs.DeleteKey ("TimePoints");
@@ -21,8 +22,7 @@ public class Player : MonoBehaviour {
 		PlayerPrefs.DeleteKey ("JumpPoints");
 		PlayerPrefs.Save();
 
-		Debug.Log ("Zeit zurücksetzen!");
-
+		// Zeit & Punkte resetten.
 		Time.timeScale = 0;
 		points = 0;
 		cointpoints = 0;
@@ -35,21 +35,23 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float h = Input.GetAxis("Horizontal");//Übernommen von Kurs-Material
+
+		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
 		if (touch && Input.GetButtonDown("Jump")){
-			rigidbody.AddForce(jumpVelocity, ForceMode.VelocityChange);//"Sprung" durch AddForce, JumpVelocity per Hand nachgestellt (0,10,0)
+			rigidbody.AddForce(jumpVelocity, ForceMode.VelocityChange); //"Sprung" durch AddForce, JumpVelocity per Hand nachgestellt (0,10,0)
 			touch = false;// erst wieder Sprung, wenn Collision auf true
 		}
-		Vector3 f =  new Vector3 (h, 0, v);//zur Bewegung links, rechts, vorwärts, rückwärts
-		rigidbody.AddForce (120.0f * f);//120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
-		/*if(transform.position.y <= -5)//check bei Runterfallen
-		{
-			LevelEnd levelEnd = new LevelEnd();//ruft LevelEnd c# funktion
-			levelEnd.LevelFail();//c# klasse wird aufgerufen
-		}*/
-		if (transform.position.y <= -3) {//check bei Runterfallen
-			Application.LoadLevel ("HighScoreTable");
+
+		Vector3 f =  new Vector3 (h, 0, v); //zur Bewegung links, rechts, vorwärts, rückwärts
+		rigidbody.AddForce (120.0f * f); //120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
+
+		// Handling for Ball ins "Aus"
+		if (transform.position.y < 0) {
+
+			GameObject go = GameObject.Find("Main Camera");
+			PauseMenuManager pauseMenu = (PauseMenuManager) go.GetComponent(typeof(PauseMenuManager));
+			pauseMenu.pauseForFail();
 		}
 
 	}

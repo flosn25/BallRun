@@ -16,6 +16,7 @@ public class TimeDisplay : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+
 	void Update () {
 		timePassed += Time.deltaTime;
 
