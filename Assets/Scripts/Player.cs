@@ -47,8 +47,9 @@ public class Player : MonoBehaviour {
 		rigidbody.AddForce (120.0f * f); //120 fache beschleunigung, oder um 20 abbremsen, aber nicht vollständig stoppen
 
 		// Handling for Ball ins "Aus"
-		if (transform.position.y < 0) {
-
+		if (transform.position.y < -6) {
+			PlayerPrefs.SetInt("fail",1);
+			PlayerPrefs.Save();
 			GameObject go = GameObject.Find("Main Camera");
 			PauseMenuManager pauseMenu = (PauseMenuManager) go.GetComponent(typeof(PauseMenuManager));
 			pauseMenu.pauseForFail();

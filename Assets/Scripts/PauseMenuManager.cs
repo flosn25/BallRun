@@ -7,10 +7,12 @@ public class PauseMenuManager : MonoBehaviour {
 	private bool pauseGame = false;
 
 	void Update () {
+		PlayerPrefs.SetInt("fail",0);
+		PlayerPrefs.Save ();
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-						pauseGame = !pauseGame;
 
+						pauseGame = !pauseGame;
 						if (pauseGame == true) {
 								Time.timeScale = 0;
 								pauseGame = true;
@@ -27,20 +29,24 @@ public class PauseMenuManager : MonoBehaviour {
 		}
 
 	public void pauseForFail() {
+		PlayerPrefs.SetInt("fail",1);
+		PlayerPrefs.Save ();
 
-		Time.timeScale = 0;
+		Time.timeScale = 1;
 		pauseGame = true;
 		PauseMenuObject.SetActive (true);
 		GameObject.Find ("Main Camera").GetComponent<CameraControl>().enabled = false;
 
+
+
+
 	}
 
 	void start () {
-		Time.timeScale = 0;
 
+		Time.timeScale = 0;
 		}
 	
-	// Update is called once per frame
 	public void PauseMenu(Object mObject) {
 		PauseMenuObject.SetActive (true);
 	}
@@ -49,7 +55,9 @@ public class PauseMenuManager : MonoBehaviour {
 		Application.LoadLevel ("MainMenu");
 }
 	public void restartLevel() {
-		Application.LoadLevel (Application.loadedLevelName);	}
+		Application.LoadLevel (Application.loadedLevelName);	
+
+	}
 
 	public void resume (Object mObject) {
 
@@ -58,7 +66,4 @@ public class PauseMenuManager : MonoBehaviour {
 		GameObject.Find ("Main Camera").GetComponent<CameraControl>().enabled = true;
 
 		}
-
-	 
-
 }

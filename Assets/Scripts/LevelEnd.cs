@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
 
-
 public class LevelEnd : MonoBehaviour {
 			
 	public Player player;
@@ -25,14 +24,9 @@ public class LevelEnd : MonoBehaviour {
 
 		player.timebonus = 0;
 		player.levelendpoints += 10000;
-		
-//		var Punkte = GameObject.Find ("Text_Points").GetComponent<Text> ();//Angezeigten Text finden
-
+	
 		timeString = Regex.Replace(Text_Time.text, "[^.0-9]", "");
 		timeFloat = float.Parse (timeString);
-
-		Debug.Log ("TimeString: " + timeString);
-		Debug.Log ("TimeFloat: " + timeFloat);
 
 		if (timeFloat <= 45) {
 			float timeBonus = (45 - timeFloat)*100;
@@ -45,11 +39,11 @@ public class LevelEnd : MonoBehaviour {
 		PlayerPrefs.SetInt ("TimePoints", player.timebonus);
 		PlayerPrefs.SetInt ("LevelEndPoints", player.levelendpoints);
 		PlayerPrefs.SetInt ("JumpPoints", player.jumpbonus);
-
-
+	
 		player.points = player.cointpoints + player.timebonus + player.levelendpoints + player.jumpbonus;
 		string levelNumberString = Regex.Replace(Application.loadedLevelName, "[^.0-9]", "");
 		int levelNumberInt = int.Parse (levelNumberString);
+
 		PlayerPrefs.SetInt ("SumScore", player.points);
 
 		Debug.Log ("Level Number: " + levelNumberInt);
